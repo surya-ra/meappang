@@ -1,0 +1,75 @@
+<!--THIS PAGE CONTAINS THE FORM TO ADD DISEASE INFORMATION-->
+<!--THIS PAGE IS LINKED WITH $MEDICAL-->
+<!--$newdisease-->
+<!--CREATOR:@Surya-->
+
+<style>
+    .mod{
+    position: absolute;
+    left: 5%;
+  }
+
+  /*CREATOR:@Surya-*/
+  .list{ 
+        background: url(../img/medical.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: all;
+    backface-visibility: transparent;
+    width: 100%;
+    height: 246px;
+    margin: auto;
+    z-index: 2;
+    position: relative;
+    position: absolute;
+    top: 6%;
+    width: 100%;
+  }
+</style>
+
+
+<div class="bar bar-header">
+  <div class="h1 title">Add Information</div>
+  <mod><button class="button icon-left ion-chevron-left button-clear button-dark" ui-sref="medical">Back</button> </mod>
+</div>
+
+
+<div class="list">
+  <label class="item item-input item-floating-label">
+    <span class="input-label">Disease Name</span>
+    <input type="text" placeholder="Disease Name">
+  </label>
+
+  <label class="item item-input item-floating-label">
+    <span class="input-label">Start Date</span>
+    <input type="date" placeholder="Start Date">
+  </label>
+  <label class="item item-input item-floating-label">
+    <span class="input-label">End Date</span>
+    <input type="date" placeholder="End Date">
+  </label>
+  <label class="item item-input item-floating-label">
+    <span class="input-label">Doctor</span>
+    <input type="text" placeholder="Doctor's Name">
+  </label>
+  <label class="item item-input item-floating-label">
+    <span class="input-label">Doctor's Number</span>
+    <input type="number" placeholder="Doctor's Number">
+  </label>
+  <br>
+  <button class="button button-clear button-dark" ui-sref="medical">
+  Done
+</button>
+<form action="demo_form.asp">
+  <input type="file" name="pic" accept="image/*">
+  <input type="submit">
+</form>
+</div>
+
+<!--
+<ion-content ng-controller="UploadController">
+  <input class="bottom-marg-15" type="file" name="file" file="file">
+  <button class="button button-small button-full button-positive" ng-disabled="file.size&amp;&amp;false || uploadProgress&gt;0" ng-click="upload()" ng-cloak="">Upload</button>
+  <img class="fit" ng-if="uploadUri" ng-src="">
+  <a ng-href="" ng-bind="uploadUri"></a>
+</ion-content>-->

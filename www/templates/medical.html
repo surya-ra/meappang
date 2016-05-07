@@ -1,0 +1,66 @@
+<!--THIS PAGE IS INSIDE THE MEDICAL HISTORY PAGE WHICH HAS THE LIST OF ALL THE DISEASES AND ONE LINE DESCRIPTION EITH AVATAR OF THE PRESCRIPTION -->
+<!--THIS PAGE IS LINKED WITH $inside-->
+<!--$medical-->
+<!-- CREATOR: @Surya-->
+
+
+<!--<style>
+	.list span0 {
+		text-align: left;
+		border-image-width: 200px;
+		font-size: 1px;
+		/*CREATOR:@Surya-*/
+		padding: 1px;
+		position: absolute;
+		top: 0%;
+		left: 0%;
+	}
+	.list{
+		display: inline-block;
+		width: 400px;
+		cursor: pointer;
+		position: absolute;
+		left: 0%;
+		top: 100%;
+	}	
+	.list span1{
+		text-align: center;
+		font-size: 25px;
+		position: absolute;
+		top: 50%;
+		left: 0%;
+	}
+	.list span2{
+		text-align: right;
+		font-size: 15px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 100px;
+	}
+</style>
+
+-->
+<style>
+	.list{
+		position: absolute;
+		top: 6%;
+	}
+</style>
+
+<div class="bar bar-header">
+  <div class="h1 title">Medical history</div>
+  <button class="button icon-left ion-chevron-left button-clear button-dark" ui-sref="inside">Back</button> 
+  <button class="button button-clear button-positive" ui-sref="newdisease">Add</button>
+</div>
+<div class="list">
+   	<a class="item item-avatar" ui-sref="descr">
+   	<img src="../img/prescrip.png">
+   	 <h2>
+   	 	Fever
+   	 </h2>
+   	 <p>
+   	 	This happened to me on 21/2/2016.
+   	 </p>
+	</a>
+</div>

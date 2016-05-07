@@ -1,0 +1,96 @@
+<ion-view>
+  <ion-footer-bar align-title="center" class="bar-positive">
+<!--    <h1 class="title">Member area</h1>-->
+    <div class="buttons">
+      <button class="button button-clear" ng-click="logout()">Logout</button>
+
+      </button>
+    </div>
+  </ion-footer-bar>
+  <ion-content class="padding">
+  <!--CREATOR:@Surya-->
+    <!--<div class="card">
+      <div class="item item-text-wrap">
+        {{memberinfo}}
+      </div>
+    </div>
+    -->
+  <!--from here to line number 62-->
+  <!-- this part is for the Home page to display personal information-->
+    <div class="list card">
+      <br>
+      <br>
+      <br>
+      <br>
+    
+      <div class="item item-avatar">
+        <img src="../img/surya.jpg">
+        <h2>Suryad</h2>
+        <p>July 31, 1994</p>
+      </div>
+
+      <div class="item item-body">
+        <img class="full-image" src="../img/surya.jpg">
+        <p>
+          Hello! This is Suryad, I am a Male, my age is 21. 
+          I am from India. My current city is kolkata.
+        </p>
+  <!--      <p>
+          <a href="#" class="subdued">1 Like</a>
+          <a href="#" class="subdued">5 Comments</a>
+        </p>-->
+      </div>
+
+    </div>
+
+
+    <div class="bar bar-header bar-positive">
+      <h1 class="title">HOME</h1>
+    </div>
+    <div class="tabs-striped tabs-top tabs-background-positive tabs-color-light">
+      <div class="tabs">
+        <a class="tab-item  active">
+          <i class="icon ion-home"></i>
+            Test
+        </a>
+        <a class="tab-item" ui-sref="perinfo">
+          <i class="icon ion-ios-bookmarks"></i>
+            Personal Information
+        </a>
+        <a class="tab-item" ui-sref="medical">
+          <i class="icon ion-ios-medkit"></i>
+            Medical Reports
+        </a>
+        <a class="tab-item" ui-sref="testlist">
+          <i class="icon ion-ios-pulse-strong"></i>
+            Test Reports
+        </a>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>
+
+
+
+<!--<ion-view>
+  <ion-header-bar align-title="center" class="bar-positive">
+    <h1 class="title">Member area</h1>
+    <div class="buttons">
+      <button class="button button-clear" ng-click="logout()">Logout</button>
+    </div>
+  </ion-header-bar>
+  <ion-content class="padding">
+    <div class="card">
+      <div class="item item-text-wrap">
+        {{memberinfo}}
+      </div>
+    </div>
+    <button class="button button-full button-assertive" ng-click="destroySession()">
+      Destroy token
+    </button>
+    <button class="button button-full button-balanced" ng-click="getInfo()">
+      Get Memberinfo
+    </button>
+  </ion-content>
+</ion-view>
+-->

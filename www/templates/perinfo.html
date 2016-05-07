@@ -1,0 +1,133 @@
+<div class="bar bar-header bar-positive">
+
+  <h1 class="title">Personal Information</h1>
+</div>
+<div class="list">
+    <br>
+    <br>
+  <label class="item item-input item-floating-label">
+    <span class="input-label">First Name</span>
+    <input type="text" placeholder="First Name" ng-model= "p_info.fname">
+  <!--CREATOR: @Surya-->
+  </label>
+  <label class="item item-input item-floating-label">
+    <span class="input-label">Last Name</span>
+    <input type="text" placeholder="Last Name" ng-model="p_info.lname">
+  </label>
+  <label class="item item-input item-floating-label">
+  	<span class="input-label">Sex</span>
+  	<input type="text" placeholder="Sex" ng-model="p_info.sex">
+  </label>
+    <label class="intem item-input item-floating-label">
+  	<span class="input-label">Date of birth</span>
+  	<input type="date" placeholder="Date of birth" ng-model="p_info.dob"></input>
+  </label>
+  <label class="item item-input item-floating-label">
+    <span class="input-label">Country</span>
+    <input type="text" placeholder="Country" ng-model="p_info.country">
+  </label>
+  <label class="item item-input item-floating-label">
+  	<span class="input-label">City</span>
+  	<input  type="text" placeholder="City" ng-model="p_info.city"></input>
+  </label>
+  <form action="demo_form.asp">
+  <input type="file" name="pic" accept="image/*">
+  <input type="submit">
+</form>
+
+<!--<button class="button button-calm button-assertive">
+  Add Information-->
+<style>
+	
+	.button {
+	  display: inline-block;
+	  border-radius: 4px;
+	  background-color: #008CBA;
+	  border: none;
+	  color: #FFFFFF;
+	  text-align: center;
+	  font-size: 20px;
+	  padding: 1px;
+	  width: 80px;
+	  transition: all 0.5s;
+      cursor: pointer;
+	  margin: 5px;
+	}
+
+	.button span {
+	  cursor: pointer;
+	  display: inline-block;
+	  position: relative;
+	  transition: 0.5s;
+	}
+
+	.button span:after {
+	  content: ' »';
+	  position: absolute;
+	  opacity: 0;
+	  top: 0;
+	  right: -20px;
+	  transition: 0.5s;
+	}
+
+	.button:hover span {
+	  padding-right: 25px;
+	}
+
+	.button:hover span:after {
+	  opacity: 1;
+	  right: 0;
+	}
+</style>
+
+<style>
+	
+	.buttona {
+	  display: inline-block;
+	  border-radius: 4px;
+	  background-color: #008CBA;
+	  border: none;
+	  color: #FFFFFF;
+	  text-align: center;
+	  font-size: 20px;
+	  padding: 9.5px;
+	  width: 100px;
+	  transition: all 0.5s;
+      cursor: pointer;
+	  margin: 5px;
+	  position: absolute;
+	  right: 1%;
+	}
+
+	.buttona span {
+	  cursor: pointer;
+	  display: inline-block;
+	  position: relative;
+	  transition: 0.5s;
+	}
+
+	.buttona span:after {
+	  content: ' »';
+	  position: absolute;
+	  opacity: 0;
+	  top: 0;
+	  right: -20px;
+	  transition: 0.5s;
+	}
+
+	.buttona:hover span {
+	  padding-right: 25px;
+	}
+
+	.buttona:hover span:after {
+	  opacity: 1;
+	  right: 0;
+	}
+</style>
+<button class="button" ui-sref="inside">
+  <span>Add</span> 
+  </button>
+  <button class="buttona" ui-sref="inside">
+  	<span>Back</span>
+  </button>
+</div>
